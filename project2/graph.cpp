@@ -27,8 +27,8 @@ int graph::initializeGraph(graph *g, int m){ //m is the user chosen average degr
     for(int i = 0; i < graphLength; i++){
         int deathCounter = 0;
         while(!isFull(g, g -> arr[i])){
-            if (deathCounter > 100000){
-                missedNodes++;
+            if (deathCounter > 100000){    //deathCounter checks to see if there are no other options to add as a neighbor
+                missedNodes++;             //after checking 100,000 times we assume there are no possibilities and stop trying
                 break;
             }
             deathCounter++;

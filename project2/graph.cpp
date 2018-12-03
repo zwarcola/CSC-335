@@ -11,8 +11,7 @@ graph::graph(){
 }
 
 
-int graph::initializeGraph(graph *g, int m){ //m is the user chosen average degree of the graph
-    
+int graph::initializeGraph(graph *g, int m){ //m is the user chosen average degree of the graph   
     srand(time(NULL));  //set seed for random generation as the time
     g -> avgDegree = m; //initialize average degree input value
     int randInt = 0;

@@ -25,7 +25,7 @@ int main(void){
     
     cout << "The number of nodes with missed connections is: " << missedNodes << endl;
     
-    cout << "BFS between two nodes: " << G -> BFS(G, G -> arr[0], G -> arr[99999]) << endl; //find the distanc between two nodes
+    cout << "BFS between two nodes: " << G -> BFS(G, G -> arr[0], G -> arr[99999]) << endl; //find the distance between two nodes
     
     cout << "Calculating diameter..." << endl;
     diameter = G -> diameter(G);
